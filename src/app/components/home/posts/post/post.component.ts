@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Post } from '../../../../_models/post';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post',
@@ -9,7 +10,12 @@ import { Post } from '../../../../_models/post';
 
 export class PostComponent {
 @Input() post?:Post
+constructor(private router:Router)
+{
 
-
+}
+onPostCLick(){
+  this.router.navigate(["/post"])
+}
 
 }

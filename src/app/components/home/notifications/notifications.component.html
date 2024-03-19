@@ -1,1 +1,9 @@
-<p>notifications works!</p>
+<div class="main">
+    
+
+@for(notif of notifications;track notif.jobId){
+    <app-notification ></app-notification>
+}@empty {
+Nu exista notificari
+}
+</div>

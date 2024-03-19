@@ -1,6 +1,6 @@
 
 
-<mat-card class="main">
+<mat-card class="main" (click)="onPostCLick()">
     <div class="title item">
         {{post?.title}}
     </div>
@@ -14,7 +14,6 @@
        
     </div>
     <div class="about item">
-        <div class="salary"> Salary : {{post?.price}}</div>
     <div class="apllicants"> Apllicants : {{post?.numberOfApplicants}}</div>
     </div>
 </mat-card>

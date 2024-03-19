@@ -18,6 +18,8 @@ import { PostsComponent } from './components/home/posts/posts.component';
 import { NavbarComponent } from './components/home/navbar/navbar.component';
 import { NotificationsComponent } from './components/home/notifications/notifications.component';
 import { PostComponent } from './components/home/posts/post/post.component';
+import { PostJobComponent } from './components/post-job/post-job.component';
+import { NotificationComponent } from './components/home/notifications/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { PostComponent } from './components/home/posts/post/post.component';
     PostsComponent,
     NavbarComponent,
     NotificationsComponent,
-    PostComponent
+    PostComponent,
+    PostJobComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
