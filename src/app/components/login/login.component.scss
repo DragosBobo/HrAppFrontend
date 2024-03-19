@@ -1,0 +1,77 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    column-gap: 10px;
+    position: relative;
+    .div-background {
+        position: absolute;
+        z-index: -100;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/back-login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+    .login{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        backdrop-filter: blur(15px);
+        background-color: rgba(255, 255, 255, 0.096);
+        width: 100%;
+        height: 100%;
+        .loginform{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: repeat(6,1fr) ;
+            row-gap: 15px;
+            padding: 15px;
+            justify-content: center;
+            .formItem{
+                grid-column: 2;
+                font-size: small;
+                
+            }
+            .formTitle{
+                color: white;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3rem;
+                font-family: "URW Chancery L, cursive";
+            }
+            .emailField{
+                grid-row: 2;
+            }
+            .passwordField{
+                grid-row: 3;
+            }
+            .formButton{
+                grid-row: 5;
+            }
+            button{
+                text-transform: uppercase;
+                border-radius: 5px;
+            border: none;
+            font-family: "URW Chancery L, cursive";
+            }
+           button:enabled{
+            background-color: rgb(139, 137, 255);
+            border-radius: 5px;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            font-size: 1rem;
+            
+           }:hover{
+            cursor: pointer;
+           }
+        }
+    }
+}

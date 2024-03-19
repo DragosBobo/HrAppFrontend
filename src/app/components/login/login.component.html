@@ -1,12 +1,37 @@
-<form [formGroup]="loginForm" >
-    <div>
-      <label for="email">Email:</label>
-      <input formControlName="email" type="email" id="email" required>
+<div class="main">
+    <div class="div-background">
+  
     </div>
-    <div>
-      <label for="password">Password:</label>
-      <input formControlName="password" type="text" id="password" required>
-    </div>
-   
-    <button (click)="onSubmit()">Login</button>
-  </form>
+    <mat-card class="login">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="loginform">
+        <span class="formItem formTitle">Login</span>
+      
+        <mat-form-field class="formItem emailField">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" id="email">
+        <div *ngIf="loginForm.get('email')?.errors?.['required']">
+          Email is required.
+        </div>
+        <div *ngIf="loginForm.get('email')?.errors?.['email']">
+          Please enter a valid email.
+        </div>
+      </mat-form-field>
+    
+    <mat-form-field class="formItem passwordField">
+      <mat-label for="password">Password:</mat-label>
+        <input matInput type="password" formControlName="password" id="password">
+        <div *ngIf="loginForm.get('password')?.errors?.['required']">
+          Password is required.
+        </div>
+        <div *ngIf="loginForm.get('password')?.errors?.['minlength']">
+          Password must be at least 6 characters long.
+        </div>
+    </mat-form-field>
+    
+     
+    
+      <button  class="formItem formButton"type="submit" [disabled]="!loginForm.valid">Login</button>
+    </form>
+    </mat-card>
+  </div>
+  
