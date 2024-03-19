@@ -1,0 +1,9 @@
+<div class="main">
+    <div class="posts">
+        @for (post of Posts; track post.title) {
+            <app-post class="post" [post]="post"> </app-post>
+          } @empty {
+            Empty list of users
+          }
+    </div>
+</div>

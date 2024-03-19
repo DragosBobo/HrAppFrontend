@@ -13,13 +13,23 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/home/about/about/about.component';
+import { PostsComponent } from './components/home/posts/posts.component';
+import { NavbarComponent } from './components/home/navbar/navbar.component';
+import { NotificationsComponent } from './components/home/notifications/notifications.component';
+import { PostComponent } from './components/home/posts/post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    PostsComponent,
+    NavbarComponent,
+    NotificationsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
