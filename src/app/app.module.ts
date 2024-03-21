@@ -21,7 +21,12 @@ import { PostComponent } from './components/home/posts/post/post.component';
 import { PostJobComponent } from './components/post-job/post-job.component';
 import { NotificationComponent } from './components/home/notifications/notification/notification.component';
 import {MatIconModule} from '@angular/material/icon';
-import { HomeRecruiterComponent } from './components/home/home-recruiter/home-recruiter.component'
+import { HomeRecruiterComponent } from './components/home/home-recruiter/home-recruiter.component';
+import { RegisterCandidateComponent } from './components/register/register-candidate/register-candidate.component';
+import { RegisterRecruiterComponent } from './components/register/register-recruiter/register-recruiter.component';
+import { RegisterManagerComponent } from './components/register/register-manager/register-manager.component';
+import { RegisterAdminComponent } from './components/register/register-admin/register-admin.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +40,15 @@ import { HomeRecruiterComponent } from './components/home/home-recruiter/home-re
     PostComponent,
     PostJobComponent,
     NotificationComponent,
-    HomeRecruiterComponent
+    HomeRecruiterComponent,
+    RegisterCandidateComponent,
+    RegisterRecruiterComponent,
+    RegisterManagerComponent,
+    RegisterAdminComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,

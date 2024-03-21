@@ -4,52 +4,34 @@
   </div>
   <mat-card class="register">
     
-  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="registerform">
-    <mat-form-field class="formItem">
-      <mat-label>Email</mat-label>
-      <input matInput type="email" formControlName="email" id="email">
-      <div *ngIf="registerForm.get('email')?.errors?.['required']">
-        Email is required.
+   @switch (role) {
+    @case ("candidate") {
+      works
+      <app-register-candidate></app-register-candidate>
+    }
+    @case ("recruiter") {
+      <app-register-recruiter></app-register-recruiter>
+    }
+    @case ("admin") {
+      <app-register-admin></app-register-admin>
+    } 
+     @case ("manager") {
+      <app-register-manager></app-register-manager>
+    }
+    @default {
+      <div class="error">
+       <span > Select a role for this account :</span>
+        <mat-form-field>
+          <mat-label >Role</mat-label>
+          <mat-select [(ngModel)]="role">
+          <mat-option value="admin">Administrator</mat-option>
+          <mat-option value="manager">Manager</mat-option>
+          <mat-option value="recruiter">Recruiter</mat-option>
+          <mat-option value="candidate">Candidate</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
-      <div *ngIf="registerForm.get('email')?.errors?.['email']">
-        Please enter a valid email.
-      </div>
-    </mat-form-field>
-  
-  <mat-form-field class="formItem">
-    <mat-label for="password">Password:</mat-label>
-      <input matInput type="password" formControlName="password" id="password">
-      <div *ngIf="registerForm.get('password')?.errors?.['required']">
-        Password is required.
-      </div>
-      <div *ngIf="registerForm.get('password')?.errors?.['minlength']">
-        Password must be at least 6 characters long.
-      </div>
-  </mat-form-field>
-  
-    ,<mat-form-field class="formItem">
-      <mat-label for="fullName">Full Name:</mat-label>
-      <input matInput type="text" formControlName="fullName" id="fullName">
-      <div *ngIf="registerForm.get('fullName')?.errors?.['required']">
-        Full name is required.
-      </div>
-    </mat-form-field>
-  
-    <mat-form-field class="formItem">
-      <mat-label for="role">Role:</mat-label>
-      <select matNativeControl  formControlName="role" id="role">
-        <option value="0">Administrator</option>
-        <option value="1">Manager</option>
-        <option value="2">Recruiter</option>
-        <option value="3">Candidate</option>
-  
-      </select>
-      <div *ngIf="registerForm.get('role')?.errors?.['required']">
-        Role is required.
-      </div>
-    </mat-form-field>
-  
-    <button  class="formItem"type="submit" [disabled]="!registerForm.valid">Register</button>
-  </form>
+    }
+   }
   </mat-card>
 </div>

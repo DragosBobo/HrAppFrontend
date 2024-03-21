@@ -21,13 +21,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 1s ease;
             mat-icon{
                 font-weight: 800;
                 scale: 3;
-                cursor: pointer;
+                cursor: pointer;transition: all 0.7s ease-out;
             }:hover{
-                scale: 4;
+                scale: 5;
             }
             
         }

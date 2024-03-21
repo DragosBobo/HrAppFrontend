@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from '../../_services/user.service';
 import { Router } from '@angular/router';
-
+import { user } from '../../test/test-user';
+import { User } from '../../_models/user';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -11,7 +12,8 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit{
   registerForm!: FormGroup ;
-
+  currentUser?:User = user;
+  role?:string;
   constructor(private formBuilder: FormBuilder, private userService: UserService,private router: Router) {
    
   }
