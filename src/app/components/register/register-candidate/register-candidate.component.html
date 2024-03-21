@@ -1,1 +1,38 @@
-works for candidate
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="registerform">
+  
+    <div class="grid">
+        <span class="title">Register</span>
+        <mat-form-field class="first-name" >
+            <mat-label>First Name</mat-label>
+            <input matInput type="text" formControlName="firstName" id="firstName">
+           
+          </mat-form-field>
+          
+          <mat-form-field class="last-name" >
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" formControlName="lastName" id="lastName">
+          
+          </mat-form-field>
+        <mat-form-field class="email">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email" id="email">
+         
+        </mat-form-field>
+          
+        <mat-form-field class="phone">
+            <mat-label>Phone</mat-label>
+            <input matInput type="phone" formControlName="phone" id="phone">
+           
+          </mat-form-field>
+            
+          <mat-form-field class="birthDay">
+            <mat-label>Birth Day</mat-label>
+            <input matInput type="text" formControlName="birthDay" id="birthDay">
+           
+          </mat-form-field>
+          <div class="cv">
+            <mat-icon>cloud_upload</mat-icon>
+          </div>
+    </div>
+  <!--  <button  class="formItem"type="submit" [disabled]="!registerForm.valid">Register</button>  -->
+  </form>

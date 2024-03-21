@@ -6,17 +6,17 @@
     
    @switch (role) {
     @case ("candidate") {
-      works
-      <app-register-candidate></app-register-candidate>
+      
+      <app-register-candidate class="form"></app-register-candidate>
     }
     @case ("recruiter") {
-      <app-register-recruiter></app-register-recruiter>
+      <app-register-recruiter class="form"></app-register-recruiter>
     }
     @case ("admin") {
-      <app-register-admin></app-register-admin>
+      <app-register-admin class="form"></app-register-admin>
     } 
      @case ("manager") {
-      <app-register-manager></app-register-manager>
+      <app-register-manager class="form"></app-register-manager>
     }
     @default {
       <div class="error">

@@ -1,0 +1,69 @@
+.registerform{
+    height: 100%;
+    .grid{
+        display: grid;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        
+        grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr ;
+        grid-template-rows: 0.7fr 0.7fr 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr 4fr 0.1fr ;
+        .first-name{
+            grid-column:2 ;
+            grid-row: 2;
+            scale: 80%;
+            mat-form-field{
+                
+                mat-label{
+                    font-size: 50%;
+
+                }
+            }
+        }
+        .title{
+            grid-column:2/5 ;
+            grid-row: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        .last-name{
+            grid-column:4;
+            grid-row: 2;
+            scale: 80%;
+        }
+        .email{
+            grid-column:2;
+            grid-row: 4;
+            scale: 80%;
+        }
+        .phone{
+            grid-column:4;
+            grid-row: 4;
+            scale: 80%;
+        }
+        .birthDay{
+            grid-column:2;
+            grid-row: 6;
+            scale: 80%;
+        }
+        .cv{
+        border-top: 1px solid rgba(128, 128, 128, 0.322);
+
+            grid-column:2/5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-row: 8;
+            mat-icon{
+                scale: 2;
+                transition: all 1s ease;
+                cursor: pointer;
+            }:hover{
+                scale: 3;
+            }
+        }
+    }
+}
