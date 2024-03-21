@@ -7,4 +7,7 @@ import { Notifications } from '../../../test/notifications';
 })
 export class NotificationsComponent {
   notifications = Notifications;
+  removeItem(item: string) {
+    this.notifications = this.notifications.filter(i => i.id !== item);
+  }
 }

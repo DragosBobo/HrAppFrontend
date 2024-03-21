@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NotificationModel } from '../../../../_models/notification';
 
 @Component({
@@ -10,4 +10,9 @@ export class NotificationComponent {
 
   @Input()
   notification?: NotificationModel;
+  @Output()
+  removeNotification  = new EventEmitter<string>();
+  onClick() {
+    this.removeNotification.emit(this.notification?.id);
+  }
 }

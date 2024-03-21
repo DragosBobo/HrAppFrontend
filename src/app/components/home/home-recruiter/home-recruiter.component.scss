@@ -1,0 +1,48 @@
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 5fr 1fr 0.1fr;
+    grid-template-rows: 0.8fr 7fr 1fr;
+    row-gap: 15px;
+    background-color:  rgba(0, 0, 0, 0.103);
+    .navbar{
+        grid-column: 1/6;
+        background-color: white;
+    }
+    .notifications{
+        grid-column: 4;
+       overflow-y: scroll;
+       background-color: white;
+    .notificationList{
+        height: 100%;
+    }
+    }
+    .cover{
+        grid-column: 3;
+        width: 100%;
+        height: 100%;
+        grid-row: 2/4;
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr 0.1fr 4fr  0.5fr 0.2fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        column-gap: 15px;
+        
+        .about-you{
+    background-color: rgb(255, 255, 255);
+     display: grid;
+     grid-row: 2/4;
+    grid-column: 2;
+        }
+        .jobs-posts{
+            background-color: white;
+            display: grid;
+            grid-row: 2/4;
+            grid-column: 4;
+        overflow-y: scroll;        
+            
+        }
+        
+    }
+    }

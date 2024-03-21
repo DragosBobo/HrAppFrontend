@@ -5,5 +5,10 @@
           } @empty {
             Empty list of users
           }
+          @if(user?.RoleName=="Recruiter"){
+            <div class="add post">
+              <mat-icon>add</mat-icon>
+            </div>
+          }
     </div>
 </div>

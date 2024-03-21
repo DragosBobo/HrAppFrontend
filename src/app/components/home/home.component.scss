@@ -15,7 +15,9 @@ background-color:  rgba(0, 0, 0, 0.103);
     grid-column: 4;
    overflow-y: scroll;
    background-color: white;
-
+.notificationList{
+    height: 100%;
+}
 }
 .cover{
     grid-column: 3;

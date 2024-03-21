@@ -17,5 +17,19 @@
         .post{
             height: 100%;
         }
+        .add{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease;
+            mat-icon{
+                font-weight: 800;
+                scale: 3;
+                cursor: pointer;
+            }:hover{
+                scale: 4;
+            }
+            
+        }
     }
 }

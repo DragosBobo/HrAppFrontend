@@ -5,8 +5,8 @@
       
        <div class="content">
 
-        @for(notif of notifications;track notif.jobId){
-            <app-notification [notification]="notif" class="notification"></app-notification>
+        @for(notif of notifications;track notif.id){
+            <app-notification [notification]="notif" (removeNotification)="removeItem(notif.id)" class="notification" ></app-notification>
         }@empty {
         Nu exista notificari
         }

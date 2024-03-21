@@ -20,7 +20,8 @@ import { NotificationsComponent } from './components/home/notifications/notifica
 import { PostComponent } from './components/home/posts/post/post.component';
 import { PostJobComponent } from './components/post-job/post-job.component';
 import { NotificationComponent } from './components/home/notifications/notification/notification.component';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import { HomeRecruiterComponent } from './components/home/home-recruiter/home-recruiter.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import {MatIconModule} from '@angular/material/icon'
     NotificationsComponent,
     PostComponent,
     PostJobComponent,
-    NotificationComponent
+    NotificationComponent,
+    HomeRecruiterComponent
   ],
   imports: [
     BrowserModule,
