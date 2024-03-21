@@ -1,3 +1,9 @@
 export class NotificationModel {
-    constructor(message:string, jobId:string, jobTitle:string){}
-    }
+    constructor(
+      public   message: string,
+      public jobId: string,
+      public jobTitle:string
+     
+    ) {}
+  }
+  

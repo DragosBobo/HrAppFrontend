@@ -1,9 +1,15 @@
 <div class="main">
     
+    
 
-@for(notif of notifications;track notif.jobId){
-    <app-notification ></app-notification>
-}@empty {
-Nu exista notificari
-}
+      
+       <div class="content">
+
+        @for(notif of notifications;track notif.jobId){
+            <app-notification [notification]="notif" class="notification"></app-notification>
+        }@empty {
+        Nu exista notificari
+        }
+       </div>
+       
 </div>

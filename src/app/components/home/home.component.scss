@@ -13,7 +13,9 @@ background-color:  rgba(0, 0, 0, 0.103);
 }
 .notifications{
     grid-column: 4;
-    background-color: white;
+   overflow-y: scroll;
+   background-color: white;
+
 }
 .cover{
     grid-column: 3;
@@ -39,11 +41,6 @@ grid-column: 2;
     overflow-y: scroll;        
 
     }
-    .notifications{
-        background-color: white;
-        display: grid;
-        grid-row: 2/4;
-        grid-column: 6;
-    }
+    
 }
 }

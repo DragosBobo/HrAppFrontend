@@ -8,5 +8,6 @@ import { NotificationModel } from '../../../../_models/notification';
 })
 export class NotificationComponent {
 
-  @Input() notification :NotificationModel;
+  @Input()
+  notification?: NotificationModel;
 }
