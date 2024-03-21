@@ -16,11 +16,12 @@
             grid-column: 1;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             overflow:hidden;
-            font-size: smaller;
+            font-size: small;
             border-right: 1px solid rgb(60, 232, 255);
-
+            font-family: "URW Chancery L, cursive";
+            
 
         }
         .close{
@@ -30,11 +31,13 @@
             display: flex;            
             align-items: center;
             justify-content: center;
+            color:  rgb(18, 130, 145);;
+        }:hover{
+            color: black;
         }
 
     }
 }
 .main:hover{
     background-color: rgba(0, 0, 0, 0.062);
-    border: 1px solid white;
 }

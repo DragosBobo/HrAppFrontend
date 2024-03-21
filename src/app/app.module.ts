@@ -20,7 +20,7 @@ import { NotificationsComponent } from './components/home/notifications/notifica
 import { PostComponent } from './components/home/posts/post/post.component';
 import { PostJobComponent } from './components/post-job/post-job.component';
 import { NotificationComponent } from './components/home/notifications/notification/notification.component';
-
+import {MatIconModule} from '@angular/material/icon'
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +43,8 @@ import { NotificationComponent } from './components/home/notifications/notificat
     MatCardModule,
     MatInputModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [
     provideClientHydration(),

@@ -1,6 +1,6 @@
-<mat-card class="main">
+<mat-card class="main" >
     <div class="content">
         <div class="message">{{notification?.message}}</div>
-        <div class="close">X</div>
+        <div class="close" (click)="onClick()"><mat-icon>delete</mat-icon></div>
     </div>
 </mat-card>

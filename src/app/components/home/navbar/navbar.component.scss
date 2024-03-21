@@ -1,0 +1,14 @@
+.main
+{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    height: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+    background-color: rgba(0, 0, 0, 0.062);
+
+    .content{
+       
+        
+    }
+}
