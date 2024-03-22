@@ -13,7 +13,7 @@ import { User } from '../../_models/user';
 export class RegisterComponent implements OnInit{
   registerForm!: FormGroup ;
   currentUser?:User = user;
-  role?:string = "candidate";
+  role?:string ="candidate";
   constructor(private formBuilder: FormBuilder, private userService: UserService,private router: Router) {
    
   }

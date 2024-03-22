@@ -30,9 +30,16 @@
             <input matInput type="text" formControlName="birthDay" id="birthDay">
            
           </mat-form-field>
-          <div class="cv">
+          <div class="bottom">
+            <div class="cv">
             <mat-icon>cloud_upload</mat-icon>
+
+            </div>
+<div class="button">
+  <button type="submit" [disabled]="!registerForm.valid">Register</button>
+
+</div>            
           </div>
+
     </div>
-  <!--  <button  class="formItem"type="submit" [disabled]="!registerForm.valid">Register</button>  -->
   </form>
